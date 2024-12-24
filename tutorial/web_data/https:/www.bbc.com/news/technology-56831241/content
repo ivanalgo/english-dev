@@ -1,0 +1,30 @@
+A new feature is being introduced to iPhones and iPads this week which is causing a huge rift between Apple and Facebook.
+It will allow device users to say no to having their data collected by apps. 
+Facebook has been put in a spin by this because user data - and the advertising it can generate - is what makes the company so profitable. This update could deal a severe blow to its business model.
+The row focuses on a unique device identifier on every iPhone and iPad, called the IDFA (identifier for advertisers). Companies which sell mobile ads, including Facebook, use this IDFA to both target ads and estimate their effectiveness. 
+The IDFA can also be paired with other tech, such as Facebook's tracking pixels or tracking cookies, which follow users around the web, to learn even more about you.
+But when iOS 14.5 comes out this week, the new App Tracking Transparency feature will be on by default. It will force app developers to explicitly ask for permission from users to use this IDFA.
+Surveys suggest, and Facebook acknowledges, that up to 80% will say no.
+If you want to know how much Facebook already tracks you on other sites and apps, there's a helpful tool on Facebook.  
+Apple has little interest in its customers' data because it makes money from selling devices and in-app purchases, rather than from advertising. Plus it has always marketed itself as a privacy-first company.
+Back in 2010, Apple co-founder Steve Jobs acknowledged that some people didn't care about how much data they shared, but said they should always be informed of how it was being used. 
+"Privacy means people know what they're signing up for, in plain English and repeatedly... ask them, ask them every time," he said.
+More recently, in what many saw as a thinly-veiled reference to Facebook, current chief executive Tim Cook said: "If a business is built on misleading users, on data exploitation, on choices that are no choices at all, it does not deserve our praise. It deserves reform."
+Apple is baking privacy into its systems. Its browser Safari already blocks third-party cookies by default, and last year Apple forced app providers in iOS to spell out in the App Store listings what data they collect.
+Facebook has warned that the app update could cut the money earned through its ad network by half, hitting small businesses the hardest.
+And it argues that sharing data with advertisers is key to giving users "better experiences".
+It also says that Apple is being hypocritical, because it will force businesses to turn to subscriptions and other in-app payments for revenue, from which Apple takes a cut.
+As it often does when under pressure, Facebook has gone on a PR offensive. It took out adverts in national newspapers in December, featuring small businesses talking about how they only survived the pandemic thanks to targeted ads.
+In its latest blog, Facebook appeared to accept the changes and promised "new advertiser experiences and measurement protocols". It admitted that the ways digital advertisers collect and use information needed to "evolve" to one that will rely on "less data".
+In recent years, governments and regulators have become increasingly concerned about just how big and complex the ecosystem around websites, apps and social media companies has become.
+Here are some points to consider:
+Most think that change is coming, even without the iOS update.
+Technology consultant Max Kalmykov wrote in Medium that advertisers had to "prepare for the next, privacy-focused era of digital advertising".
+This may include contextual ads, such as fashion-related ads appearing only on websites about fashion rather than randomly following people across the web.
+Ad placements on podcasts or with influencers would be another non-intrusive way of advertising, he suggested.
+Meanwhile, Apple says that it supports the ad industry, and has introduced new free tools that let advertisers know how successful a campaign has been, without revealing individual users' identities.
+If you don't have a unique number attached to a device, it doesn't mean that you can't be tracked.
+Device fingerprinting combines certain attributes of a device - such as the operating system it uses, the type and version of web browser and the device's IP address to identify it uniquely. It is an imperfect art, but one that is gaining traction in the advertising world.
+The Federated Learning of Cohorts (FLoC) may sound like something from a fantasy novel, but actually it is an idea from Google about how to continue tracking people in a privacy-friendly way.
+The idea is that a browser enabled with FLoC would collect information about browsing habits and assign users to a group, or flock, with similar browsing histories. Each will share an ID which will indicate their interests to advertisers.
+Mozilla, Firefox and others aren't keen on the scheme, according to The Verge, while privacy advocates Electronic Frontiers Foundation said it was a "terrible idea", suggesting Google should ensure that browsers "work for users, not for advertisers". 

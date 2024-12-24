@@ -1,0 +1,26 @@
+Facebook was warned by security researchers that attackers could abuse its phone number and email search facility to harvest people's data.
+On Wednesday, the firm said "malicious actors" had been harvesting profiles for years by abusing the search tool.
+It said anybody that had not changed their privacy settings after adding their phone number should assume their information had been harvested.
+One security expert told the BBC the attack had been possible "for years".
+Until Wednesday, Facebook let people search for their friends' profiles by typing in a phone number or email address. 
+But it said scammers had abused the facility and used it to link phone numbers and emails to people's names and profile information.
+An attacker could type in any phone number - even one they had made up by guessing - and link it to a person's profile. Often this would reveal their name, location and other profile information.
+By linking a phone number to personal details, a scammer could telephone the victim and address them by name. They could pretend to be from a bank or other organisation.
+"This is known as enumeration, going through all the iterations of a number," said security researcher Ken Munro from Pen Test Partners.
+"If you wanted to scam somebody, you had a route to find their details and know their name - a fantastic set-up for a scam."
+Facebook said it had put measures in place to limit how often people could search. But the measures were "not able to prevent malicious actors who cycled through hundreds of thousands of different IP addresses," Mark Zuckerberg explained.
+An IP address can be used to identify an individual computer using the internet, but the attackers changed theirs frequently to avoid detection.
+Facebook has previously encouraged people to add their phone number to their account. It said doing so would make it easier to connect with friends, or improve account security.
+By default, anybody could then find the Facebook profile by typing the phone number in the search box.
+Facebook said the facility had been "useful" for finding friends, especially in countries where many people have the same name. It said phone number searches made up "7% of all searches" in Bangladesh.
+However, while members could choose not to display their phone number on their profile, it was not possible to completely opt out of the search facility.
+Security researchers have previously written about how the feature could be abused by scammers.
+In August 2015, Facebook told one security researcher that it did not consider the issue a security vulnerability.
+News site Wired has also spoken to another developer that raised the issue with Facebook.
+Facebook has faced scrutiny after it was revealed that the data of millions of people was improperly shared with the political consultancy Cambridge Analytica.
+On Thursday, Matt Hancock, the secretary of state for digital, culture, media and sport said Facebook had put "the data of over a million of our citizens at risk".
+Facebook said an audit had revealed that scammers had managed to act with "scale and sophistication" to overcome its technical measures.
+It said "most people on Facebook could have had their public profile scraped in this way". 
+Speaking to reporters, Mr Zuckerberg said: "It is reasonable to expect that if you had that [default] setting turned on, that in the last several years someone has probably accessed your public information in this way.
+"Given that and what we know today, it just makes sense to shut that down."
+The company has now disabled the ability to search by phone number. 

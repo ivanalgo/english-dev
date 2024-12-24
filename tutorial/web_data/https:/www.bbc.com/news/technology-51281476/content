@@ -1,0 +1,17 @@
+Ring doorbells are providing customer data to companies such as Facebook and Google, an investigation suggests.
+The Electronic Frontier Foundation found the Ring app was "packed" with third-party tracking, sending out customers' personally identifiable information.
+Five companies were receiving a range of information, including names, IP addresses and mobile networks, it said.
+Ring said it limited the amount of data it shared.
+The company told Gizmodo: "Like many companies, Ring uses third-party service providers to evaluate the use of our mobile app, which helps us improve features, optimise the customer experience and evaluate the effectiveness of our marketing."
+But the EFF said Ring was failing to protect users' privacy, noting only one of the trackers it had found was mentioned in the company's privacy policy.
+"The danger in sending even small bits of information is that analytics and tracking companies are able to combine these bits together to form a unique picture of the user's device," the EFF said.
+"This cohesive whole represents a fingerprint that follows the user as they interact with other apps and use their device, in essence providing trackers the ability to spy on what a users is doing in their digital lives and when they re doing it."
+The five companies identified as receiving information were:
+Out of these, only MixPanel is mentioned in Ring's privacy notice, along with Google Analytics, HotJar and Optimizely. 
+The investigation by EFF tested Ring for Android, version 3.21.1.
+Amazon, which bought Ring in 2018 and sells a range of home security cameras as well as doorbells, has been criticised for partnering with at least 200 law-enforcement agencies to carry out surveillance via its devices.
+Digital rights campaign group Fight for the Future said at the time Amazon was encouraging neighbours to spy on each other. 
+And last year, there was a series of stories about Ring cameras being hacked.
+One Alabama-based man, who claims a hacker spoke to his children via his Ring camera, is leading a group legal action against the company over the security of its products.
+Writing on Medium this weekend, Max Eliaser, one of Amazon's software development engineers, called for Ring to "be shut down immediately and not brought back".
+"The deployment of connected home security cameras that allows footage to be queried centrally are simply not compatible with a free society," he wrote in an article seeking the views of Amazon employees on a range of issues.

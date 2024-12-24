@@ -1,0 +1,103 @@
+import scrapy
+from scrapy.http import HtmlResponse
+from scrapy import signals
+import re
+import os
+
+class BBCSpider(scrapy.Spider):
+    name = "bbc"
+    start_urls = [
+            "https://www.bbc.com/",
+    ]
+
+    word_count = {}
+
+    def write_article(self, url, tittle, content_blocks):
+        directory = "web_data/" + url
+        if not os.path.exists(directory):
+            #print("Hardy create: ", directory)
+            os.makedirs(directory)
+        
+        # tittle
+        tittle_path = os.path.join(directory, "tittle")
+        with open(tittle_path, 'w', encoding='utf-8') as tittle_f:
+            tittle_f.write(tittle)
+        # content
+        content_path = os.path.join(directory, "content")
+        with open(content_path, 'w', encoding='utf-8') as content_f:
+            for block in content_blocks:
+                content_f.write(block + '\n')
+
+    def parse_article(self, response):
+        url = response.request.url
+        if "/sport" in url or "/weather" in url:
+            tittle = response.xpath('//*[@id="main-heading"]/span/text()').get()
+            content_blocks = response.xpath('//*[@id="main-content"]/article/div[@data-component="text-block"]//p//text()').getall()
+        else:
+            tittle = response.xpath('//*[@id="main-content"]/article/div[@data-component="headline-block"]/h1/text()').get()
+            content_blocks = response.xpath('//*[@id="main-content"]/article/div[@data-component="text-block"]/p/text()').getall()
+
+        self.write_article(url, tittle, content_blocks)
+
+    def parse_article_list(self, response):
+        # 提取所有 <a> 标签的 href 属性
+        links = response.xpath('//a/@href').getall()
+        
+        # 打印所有链接
+        for link in links:
+            if re.search(r"/articles/", link):
+                yield response.follow(link, callback = self.parse_article)
+
+    def parse(self, response):
+        url_set = set() 
+        # 提取 noscript 标签内的 HTML 内容
+        noscript_html = response.xpath('//*[@id="__next"]/div/noscript[2]').get()
+
+        if noscript_html:
+            nested_response = HtmlResponse(url="", body=noscript_html, encoding='utf-8')
+
+            # 解析新的响应对象，提取所有的二级链接
+            second_level_links = nested_response.xpath('//li[@class="sc-c8fbcff-3 jtEFxm"]/a')
+            for link in second_level_links:
+                href = link.xpath('@href').get()
+                text = link.xpath('text()').get()
+                url_set.add(href)
+        else:
+            print("No content found in noscript tag.")
+
+        prefix_set = set()
+        for prefix in url_set:
+            for item in url_set:
+                if prefix == item:
+                    continue
+
+                if item.startswith(prefix):
+                    prefix_set.add(prefix)
+
+        # remove all prefix
+        for prefix in prefix_set:
+            url_set.remove(prefix)
+
+        remove_prefix = ["/home", "/sport", "/video" ]
+        remove_set = set()
+        for url in url_set:
+            for prefix in remove_prefix:
+                if url.startswith(prefix):
+                    remove_set.add(url)
+
+        for url in remove_set:
+            url_set.remove(url)
+
+
+        for url in url_set:
+            #print("Hardy: ", url)
+            yield response.follow(url, callback=self.parse_article_list)
+
+    @classmethod
+    def from_crawler(cls, crawler, *args, **kwargs):
+        spider = super(BBCSpider, cls).from_crawler(crawler, *args, **kwargs)
+        crawler.signals.connect(spider.spider_closed, signal=signals.spider_closed)
+        return spider
+
+    def spider_closed(self, spider):
+        print(len(self.word_count))

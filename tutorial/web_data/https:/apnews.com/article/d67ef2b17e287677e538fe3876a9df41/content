@@ -1,0 +1,44 @@
+PARIS (AP) — France is rolling out an official coronavirus contact-tracing app aimed at containing fresh outbreaks as lockdown restrictions gradually ease, becoming the first major European country to deploy the smartphone technology amid simmering debates over data privacy.
+The 
+StopCovid 
+ app launched Tuesday just as the French government started allowing people to once again go to restaurants and cafes, parks and beaches and museums and monuments. It was available on Apple’s App store and the 
+Google Play 
+ store.
+Neighbors including the U.K., Germany, Italy, and Switzerland are developing their own apps, though they’re using different technical protocols, raising questions about compatibility across Europe’s borders.
+Authorities hope the app can help manage virus flare-ups as they reopen the economy in France, which has been living under some of Europe’s tightest restrictions since it became one of countries hardest hit by the pandemic, with nearly 29,000 deaths.
+Some Parisians were keen to adopt the technology to help bring life back to normal. 
+Cafe waiter Paul Hubert said he was ready to download the app because he sees “more benefits than risks.” 
+“To me it sounds like wearing a mask in a shop,” said Hubert, 24. “It’s easy and it can help protecting others.” 
+The various European apps use low-energy Bluetooth signals to anonymously log the nearby presence of other users. Under the French system, data is uploaded to government-run centralized servers. Users who test positive will be able to notify others who have been in close contact for at least 15 minutes so they can self-isolate and seek treatment.
+
+        
+    
+France, like Britain, rejected a new mobile software interface for tracing apps jointly developed by U.S. tech giants Google and Apple, instead choosing to build its own. The Google-Apple system uses a “decentralized” system backed by privacy experts because it keeps data on phones, but British and French officials say it doesn’t give them enough information to manage outbreaks. 
+Civil liberties groups worry that tracing apps are a gateway to more government surveillance but Cedric O, France’s junior minister for the digital economy, dismissed those concerns.
+“The problem with a centralized protocol is that you have to be confident and to trust your state but we’re in a democratic state, we have checks and balances,” O told the AP.
+The government says the app doesn’t track location and deletes user data after 14 days.
+Some French lawmakers have raised doubts over the app’s effectiveness if few people install it and because of potential technical issues. O said the app detects about 80% of surrounding phones via Bluetooth.
+Parisian Sami Mounir said he won’t download it because of the privacy concerns. 
+“We don’t know what they could do with the data or whether it could be hacked,” Mounir, 31, said. “Plus, it’s health data, it’s too sensitive.”
+Officials and experts say tracing apps aren’t a magic bullet against the virus but can aid time-consuming manual contact tracing efforts.
+Professor Arnaud Fontanet, epidemiologist at the Paris Pasteur Institute and a member of the scientific committee advising French President Emmanuel Macron, said the app is “a tool, not a revolutionary one, but a useful tool.” 
+France and other countries have set up teams to interview people testing positive about their contacts. But the tracers will likely miss strangers, so the app may prove useful especially “in circumstances where you’re going to stand next to someone who is infected, without knowing, for quite a long period of time,” like in public transports and restaurants, Fontanet said. 
+Other countries around Europe have been scrambling to build apps, often using the Google-Apple system. The reliance on the tech giants for a more private system is an ironic turn of events after the European Union called them out repeatedly in recent years for not protecting data privacy sufficiently.
+In the U.S., only a few states were early to launch tracing apps, which have encountered technical problems on Apple and Android phones and haven’t been widely downloaded. Other states are building apps using the Google-Apple technology. 
+Italy’s 
+Immuni app
+, based on the Google-Apple system, was available to download starting Monday, and will undergo testing next week before being rolled out nationwide. Authorities say at least 60% of Italy’s 60 million population need to use it for it to be effective.
+Switzerland started a pilot test of its 
+SwissCovid 
+ app last week, to last until mid-June, when the government is expected to introduce legislation covering the app.
+Germany hired software company SAP and wireless carrier Deutsche Telekom to build its decentralized 
+“Corona-Warn-App.
+ " Developers say the app’s “data will be stored locally on each device preventing access and control over data by authorities or anyone else.”
+Britain launched a massive countrywide “track and trace” program on Friday, including 25,000 human contact tracers, but its 
+tracing app
+, which is being tested, isn’t ready and it’s unclear when it will be launched.
+The European apps are voluntary to encourage people to use them. If the app is mandatory, “people will definitely not use it,” said, Ingmars Pukis, a vice president at Latvian wireless carrier LMT, which helped develop the country’s tracing app, released Friday and also based on the Google-Apple standard.
+EPFL, the Swiss research institute that helped develop SwissCovid, said that with other European countries building apps based on the same decentralized protocol, it should enable different systems to work with each other when users travel.
+But that leaves out the British and French systems.
+The French government’s technology choice means the French app is not compatible with foreign ones. O suggested that cross-border commuters and travelers will have to work around the problem by downloading their destination country’s app.
+Chan reported from London. Colleen Barry in Milan contributed to this report. 

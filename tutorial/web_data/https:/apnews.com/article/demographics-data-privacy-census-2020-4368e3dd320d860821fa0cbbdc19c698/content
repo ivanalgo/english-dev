@@ -1,0 +1,22 @@
+Commerce Secretary Gina Raimondo on Wednesday defended a controversial privacy technique being used by the U.S. Census Bureau in the 2020 census, a method the agency promised would only make small changes to actual numbers in counts of racial and ethnic groups.
+The technique called “differential privacy” adds mathematical “noise,” or errors, to the data to obscure any given individual’s identity while still providing statistically valid information. 
+Bureau officials say the change is needed to prevent data miners from matching individuals to confidential details that have been rendered anonymous in the massive data release expected as early as August. It will be applied to race, age and other demographic information in geographic areas within each state.
+Speaking at a White House briefing, Raimondo said the method was “justified.”
+“It’s a statistical technique that is intended to protect people’s privacy ... There can be privacy hacks today that technologically weren’t possible 10 years ago,” Raimondo said. “So in order for us to keep up with that and protect people’s privacy, we have to implement new techniques, and this is one of those new techniques.”
+The Census Bureau said it is still formulating the details, but bureau officials have previously described trying to find “the sweet spot” between data confidentiality and data accuracy.
+Last month, the state of Alabama and Alabama politicians sued the Census Bureau and the Commerce Department, which oversees the statistical agency, claiming differential privacy will result in inaccurate data.
+
+        
+    
+On Monday, a pair of civil rights groups also raised concerns about differential privacy in a report.
+Differential privacy could lower the quality of the data used for redrawing congressional and legislative districts, according to a report from Mexican American Legal Defense and Educational Fund, also known as MALDEF, and Asian Americans Advancing Justice AAJC.
+The report suggested that differential privacy produced data that was less accurate for determining if a racial or ethnic minority group formed a majority in a particular community, potentially diluting their local political power. It also said the technique may create districts that run afoul of court rulings requiring districts to have equal population numbers.
+But the Census Bureau said in a statement Wednesday that when employing the method any change from actual numbers dealing with racial or ethnic groups would be small most of the time.
+In counts of racial and ethnic groups, the statistical agency has a target of being accurate within 5 percentage points of the real numbers at least 95% of the time at the smallest geographic levels, such as neighborhoods. That accuracy range improves to at least 99.9% of the time as the size of the geographies get larger, the Census Bureau said.
+But that 5-percentage-point deviation only is for the total population of an area. It could be much larger for subgroups like Latinos, and that could make the difference in deciding whether a district has a racial or ethnic majority, said Thomas Saenz, president and general counsel of the Mexican American Legal Defense and Educational Fund.
+Raimondo also urged patience from state officials who are uncertain about when their congressional and legislative districts will be redrawn because the Census Bureau was unable to release redistricting data by a March 31 deadline owing to delays caused by the pandemic. The bureau says the redistricting data will be released in an old format by August and in a new format by the end of September.
+Besides redistricting, the 2020 census is used for divvying up congressional seats and Electoral College votes among the states and distributing $1.5 trillion in federal spending each year.
+“We are behind, but my direction to the team is we have to get it right,” Raimondo said. “The fact of the matter is it’s so much better to wait a little longer and have accurate data that we all can trust ... We are prioritizing accuracy over rushing it out.”
+Associated Press writer Alexandra Jaffe in Washington contributed to this report.
+Follow Mike Schneider on Twitter at 
+https://twitter.com/MikeSchneiderAP

@@ -1,0 +1,17 @@
+Twitter's automatic cropping of images had underlying issues that favoured white individuals over black people, and women over men, the company said. 
+It comes months after its users highlighted potential problems with the algorithm, which cropped large photos. 
+The social network's follow-up research has now confirmed the problem. 
+Twitter said it has already started phasing out the older system, with an update to mobile apps that gave more accurate image previews.
+Under the old system, the algorithm would do its best to centre the view of very tall or wide images in a way that would frame people's faces or other interesting parts of the image. But it did not always work perfectly. 
+In September last year, a university employee noticed that when he posted two photos - one of himself and one of a colleague - Twitter's preview consistently showed the white man over the black man, no matter which photo was added to the tweet first. 
+Other users discovered the pattern held true for images of former US President Barack Obama and Senator Mitch McConnnell, or for stock images of businessmen of difference racial backgrounds. When both were in the same image, the preview crop appeared to favour white faces, hiding the black faces until users clicked through to the full photo.
+Twitter reacted quickly, explaining that it had tested for these kinds of problems with its machine learning system before releasing it - but acknowledged that more work had to be done, and promised a fix. 
+The company revealed the results in a detailed engineering blog post on Wednesday. 
+The problem was with its "saliency algorithm" which it released in 2018 to crop images. The algorithm was "trained on human eye-tracking data", Twitter explained, but the cause of the apparent issues may be down to several complicated factors.
+In testing, compared to a 50-50 chance of "demographic parity", it found: 
+The team also tested for allegations of the "male gaze" effect - where images of women were cropped to the chest or legs rather than a face. But in that instance, the test they ran did not find evidence of bias. 
+"We considered the trade-offs between the speed and consistency of automated cropping with the potential risks we saw in this research," wrote Rumman Chowdhury, Twitter's director of software engineering. 
+"One of our conclusions is that not everything on Twitter is a good candidate for an algorithm, and in this case, how to crop an image is a decision best made by people," she said. 
+She pointed to the recent rollout of a true-to-life crop preview, which also no longer crops "standard" 16:9 or 4:3 aspect ratio photos.  
+"We're working on further improvements to media on Twitter that builds on this initial effort, and we hope to roll it out to everyone soon," she said. 
+In a statement to CNN, a Twitter spokesperson clarified that while the initial change was on mobile apps - where the problem was first reported - the company plans to remove the algorithmic cropping from the website version of Twitter in the coming months. 

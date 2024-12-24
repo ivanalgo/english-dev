@@ -1,0 +1,103 @@
+import scrapy
+from scrapy.http import HtmlResponse
+from scrapy import signals
+import re
+import os
+
+class BBCSpider(scrapy.Spider):
+    name = "bbc"
+    data_dir = "web_data/"
+
+    access_url_set = set()
+
+    def start_requests(self):
+        start_urls = []
+
+        for root, dirs, files in os.walk(self.data_dir):
+            for file in files:
+                if file == 'url':
+                    url_path = os.path.join(root, file)
+                    with open(url_path, 'r', encoding='utf-8') as f:
+                        url = f.read()
+
+                    if not os.path.exists(os.path.join(root, 'crwal')):
+                        start_urls.append(url)
+                    else:
+                        access_url_set.add(url)
+
+        if len(start_urls) == 0:
+            start_urls = ["https://www.bbc.com/"]
+
+        for url in start_urls:
+            yield scrapy.Request(url=url, callback=self.parse)
+
+    def write_file(self, url, item, values):
+        directory = "web_data/" + url
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+
+        path = os.path.join(directory, item)
+        with open(path, 'w', encoding='utf-8') as f:
+            for value in values:
+                f.write(value + '\n')
+
+    def write_article(self, url, tittle, content_blocks):
+        self.write_file(url, 'url', [url])
+
+        if tittle and content_blocks:
+            # tittle
+            self.write_file(url, 'tittle', [tittle])
+            # content
+            self.write_file(url, 'content', content_blocks)
+
+    def parse_article(self, response):
+        url = response.request.url
+        article_elem = response.xpath('//*[@id="main-content"]/article')
+
+
+        if article_elem:
+            tittle = article_elem.xpath('.//div[@data-component="headline-block"]/h1/text()').get()
+            content_blocks = article_elem.xpath('.//div[@data-component="text-block"]')
+
+        if not article_elem or not tittle or not content_blocks:
+            return self.write_article(url, None, None)
+
+        # 查找所有的内容块
+        content_blocks = article_elem.xpath('.//div[@data-component="text-block"]')
+        content_texts = []
+        for block in content_blocks:
+                # 获取每个内容块的文本内容
+                text = block.xpath('.//p//text()').getall()
+                content_texts += text
+
+        self.write_article(url, tittle, content_texts)
+
+    def parse(self, response):
+        url = response.request.url
+
+        self.access_url_set.add(url)
+
+        self.parse_article(response)
+
+        relative_links = response.xpath('//a/@href').getall()
+        absolute_links = [response.urljoin(link) for link in relative_links]
+
+        for link in absolute_links:
+            if not link.startswith("http"):
+                continue
+            # out of site
+            if not link.startswith("https://www.bbc.com/"):
+                continue
+
+            # 跳过带锚点的 URL
+            if "#" in link:
+                continue
+
+            if link in self.access_url_set:
+                continue
+            self.access_url_set.add(link)
+
+            #print("hardy link: ", link)
+            yield response.follow(link, callback = self.parse)
+
+        self.write_file(url, 'crawl', ['yes'])
