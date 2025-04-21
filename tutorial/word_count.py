@@ -8,8 +8,10 @@ from nltk.corpus import stopwords
 
 # 下载所需的资源
 nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
+nltk.download('averaged_perceptron_tagger_eng')
 nltk.download('stopwords')
 
 p = inflect.engine()

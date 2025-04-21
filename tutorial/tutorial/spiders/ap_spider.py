@@ -1,6 +1,5 @@
 import sys
-sys.path.append("/Users/hardy/english-dev/tutorial/tutorial/spiders")
-from common_spider import CommonSpider
+from .common_spider import CommonSpider
 
 
 class APSpider(CommonSpider):

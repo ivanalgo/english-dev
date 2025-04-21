@@ -1,4 +1,4 @@
-from common_spider import CommonSpider
+from .common_spider import CommonSpider
 
 class BBCSpider(CommonSpider):
     name = "bbc"

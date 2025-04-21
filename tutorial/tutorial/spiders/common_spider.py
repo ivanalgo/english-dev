@@ -65,7 +65,8 @@ class CommonSpider(scrapy.Spider):
         (tittle, content_texts) = self.extract_article(response)
         url = response.request.url
         if not tittle or not content_texts:
-            return self.write_article(url, None, None)
+            #return self.write_article(url, None, None)
+            return
 
         self.write_article(url, tittle, content_texts)
 
@@ -97,4 +98,6 @@ class CommonSpider(scrapy.Spider):
             #print("hardy link: ", link)
             yield response.follow(link, callback = self.parse)
 
-        self.write_file(url, 'crawl', ['yes'])
+	# do not record url with ? or #
+        if not "#" in url and not "?" in url:
+            self.write_file(url, 'crawl', ['yes'])
